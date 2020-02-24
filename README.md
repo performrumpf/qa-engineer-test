@@ -14,10 +14,11 @@ Test Class: `com.statsperform.qa.test.QATest1`
 Test method: `bmiTest`  
 Test page: https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/metric_bmi_calculator/bmi_calculator.html
 
-Given is a `@ParameterizedTest` with 2 input parameters (height, weight)
-and 4 output parameters (type, bmi, minKilogram, maxKilogram) for a BMI calculator.
+Given is a `@ParameterizedTest` with 2 input parameters (_height_, _weight_)
+and 4 output parameters (_type_, _bmi_, _minKilogram_, _maxKilogram_) for a BMI calculator.
 `@CsvSource` contains 5 different test datas with inputs and outputs which will be
-injected into `bmiTest` test method.
+injected into `bmiTest` test method. You can enter additional test data if you want,
+but don't change/delete the previous ones.
 
 **Use case**
 
@@ -40,7 +41,7 @@ a selector and call the correct methods to interact with the page so that all
 * Class `com.statsperform.utils.QAUtils` contains some useful methods to find elements.  
 it is up to you what you will use (see table below)
 * In the logs you can see test steps incl. their states *PASS* or *FAIL*
-* Use Web Developer Tools or plugins (i.e. )
+* Use Web Developer Tools or plugins (i.e. ChroPath)
 * If you want to use a different browser, just change configuration in class `com.statsperform.qa.AbstractQATest`
 * **Don't trust web developer's page designs.**
 
